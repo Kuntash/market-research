@@ -1,0 +1,8 @@
+{
+  "short_name": "Market Research",
+  "name": "Market Research",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f7f4ef",
+  "background_color": "#f7f4ef"
+}

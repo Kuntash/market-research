@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "market-research-web",
+  "account_id": "6fe9b0c09f35a9430c903129fbe12c21",
+  "compatibility_date": "2025-09-02",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "@tanstack/react-start/server-entry",
+  "workers_dev": false,
+  "routes": [{ "pattern": "marketresearch.kunga.dev", "custom_domain": true }],
+  "observability": {
+    "enabled": true
+  }
+}
