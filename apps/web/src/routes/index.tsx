@@ -1,20 +1,20 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { LandingPage } from "../components/landing-page";
+import { LandingPageMobile } from "../components/landing-page-mobile";
 
 export const Route = createFileRoute("/")({
-  component: App,
+  component: Home,
 });
 
-function App() {
+function Home() {
   return (
-    <main className="app-shell">
-      <section className="hero">
-        <p className="eyebrow">Market Research</p>
-        <h1>Research workspace, ready for the first real workflow.</h1>
-        <p className="lede">
-          This bare TanStack Start app is set up inside a monorepo, with routing, styling, and build
-          scripts wired from the portfolio reference.
-        </p>
-      </section>
+    <main className="overflow-x-hidden w-full max-w-full">
+      <div className="hidden md:block">
+        <LandingPage />
+      </div>
+      <div className="md:hidden">
+        <LandingPageMobile />
+      </div>
     </main>
   );
 }
